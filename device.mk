@@ -53,12 +53,11 @@ TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
 
 # Boot control
-PRODUCT_PACKAGES += \
-    android.hardware.boot@1.0-impl \
-    android.hardware.boot@1.0-service \
-    bootctrl.sdm660 \
-    android.hardware.boot@1.0-impl.recovery \
-    bootctrl.sdm660.recovery
+PRODUCT_STATIC_BOOT_CONTROL_HAL := \
+	bootctrl.sdm660 \
+	libcutils \
+	libgptutils \
+	libz
 
 # Boot control debug
 PRODUCT_PACKAGES_DEBUG += \
