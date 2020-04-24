@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2018 The Xiaomi-SDM660 Project
+# Copyright (C) 2020 Paranoid Android
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,6 +24,9 @@
 
 # Inherit the fusion-common definitions
 $(call inherit-product, device/xiaomi/sdm660-common/sdm660.mk)
+
+# Define first api level
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Device Path
 DEVICE_PATH := device/xiaomi/jasmine_sprout
@@ -48,16 +52,13 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/audio/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \
     $(DEVICE_PATH)/configs/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2160
-TARGET_SCREEN_WIDTH := 1080
-
 # Boot control
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-	bootctrl.sdm660 \
-	libcutils \
-	libgptutils \
-	libz
+PRODUCT_PACKAGES += \
+    android.hardware.boot@1.0-impl \
+    android.hardware.boot@1.0-service \
+    bootctrl.sdm660 \
+    android.hardware.boot@1.0-impl.recovery \
+    bootctrl.sdm660.recovery
 
 # Boot control debug
 PRODUCT_PACKAGES_DEBUG += \
@@ -135,10 +136,3 @@ $(call inherit-product, build/target/product/verity.mk)
 
 # Vendor files
 $(call inherit-product, vendor/xiaomi/wayne/wayne-vendor.mk)
-
-# AOSP DEVICE
-PRODUCT_NAME := aosp_jasmine_sprout
-PRODUCT_DEVICE := jasmine_sprout
-PRODUCT_MODEL := Mi A2 (AOSP)
-PRODUCT_BRAND := Xiaomi
-PRODUCT_MANUFACTURER := Xiaomi

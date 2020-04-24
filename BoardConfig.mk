@@ -39,11 +39,11 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/nvt_wake_gesture"
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
 TARGET_KERNEL_CONFIG := jasmine-perf_defconfig
 
-# Manifest
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
-
 # Recovery
 TARGET_PREBUILT_RECOVERY_RAMDISK_CPIO := $(DEVICE_PATH)/twrp/ramdisk-recovery.cpio
+
+# Manifest
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Platform
 BOARD_VENDOR_PLATFORM := xiaomi-sdm660
