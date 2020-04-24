@@ -61,7 +61,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     AOSPAJasmineSettings \
     JasmineFrameworks \
-    JasmineSystemUI
+    JasmineSystemUI \
+    JasmineWifi
 
 # Permissions
 PRODUCT_COPY_FILES += \

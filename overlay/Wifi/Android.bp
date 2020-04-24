@@ -1,0 +1,5 @@
+runtime_resource_overlay {
+    name: "JasmineWifi",
+    theme: "JasmineWifi",
+    product_specific: true
+}
