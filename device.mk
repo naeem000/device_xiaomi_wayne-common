@@ -28,6 +28,9 @@ $(call inherit-product, device/xiaomi/sdm660-common/sdm660.mk)
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # Device Path
 DEVICE_PATH := device/xiaomi/jasmine_sprout
 
@@ -36,9 +39,6 @@ ENABLE_AB := true
 
 # FBE
 ENABLE_FBE := true
-
-# APEX
-ENABLE_APEX := true
 
 # Audio
 PRODUCT_COPY_FILES += \
