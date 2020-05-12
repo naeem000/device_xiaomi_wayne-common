@@ -27,7 +27,7 @@ include device/xiaomi/sdm660-common/BoardConfigCommon.mk
 DEVICE_PATH := device/xiaomi/jasmine_sprout
 
 # DT2W
-TARGET_TAP_TO_WAKE_NODE := "/proc/nvt_wake_gesture"
+TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
