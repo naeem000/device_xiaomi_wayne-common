@@ -27,7 +27,7 @@ include device/xiaomi/sdm660-common/BoardConfigCommon.mk
 DEVICE_PATH := device/xiaomi/jasmine_sprout
 
 # Display
-TARGET_SCREEN_DENSITY := 480
+TARGET_SCREEN_DENSITY := 440
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
