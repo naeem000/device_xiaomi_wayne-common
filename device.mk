@@ -72,6 +72,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/keylayout/sdm660-snd-card_Button_Jack.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/sdm660-snd-card_Button_Jack.kl
 
+# QTI common
+TARGET_COMMON_QTI_COMPONENTS := \
+    vibrator
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.device.rc
