@@ -76,10 +76,6 @@ PRODUCT_COPY_FILES += \
 TARGET_COMMON_QTI_COMPONENTS := \
     vibrator
 
-# Ramdisk
-PRODUCT_PACKAGES += \
-    init.device.rc
-
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
