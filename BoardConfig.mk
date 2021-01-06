@@ -29,9 +29,6 @@ DEVICE_PATH := device/xiaomi/jasmine_sprout
 # Display
 TARGET_SCREEN_DENSITY := 480
 
-# DT2W
-TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
-
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
 KERNEL_DEFCONFIG := wayne_defconfig
