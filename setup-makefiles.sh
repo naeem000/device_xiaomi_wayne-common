@@ -26,7 +26,6 @@ export GUARDED_DEVICES="jasmine_sprout wayne"
 
 # Required!
 export DEVICE=wayne-common
-export DEVICE_BRINGUP_YEAR=2018
 
 DEVICE_COMMON=sdm660-common
 VENDOR=xiaomi
