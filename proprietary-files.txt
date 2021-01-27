@@ -736,10 +736,6 @@ vendor/lib/libmmcamera_isp_sub_module.so
 vendor/lib/hw/consumerir.default.so:vendor/lib/hw/consumerir.sdm660.so
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sdm660.so
 
-# Display calibration
-vendor/etc/qdcm_calib_data_tianma_nt36672_fhd_video_mode_dsi_panel.xml
-vendor/etc/qdcm_calib_data_jdi_nt36672_fhd_video_mode_dsi_panel.xml
-
 # Fingerprint firmware
 etc/firmware/goodixfp.b00:vendor/firmware/goodixfp.b00
 etc/firmware/goodixfp.b01:vendor/firmware/goodixfp.b01
