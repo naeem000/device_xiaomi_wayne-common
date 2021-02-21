@@ -21,11 +21,6 @@
 # definition file).
 #
 
-# Adaptive Display
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.qcom.ad=1 \
-    ro.qcom.ad.sensortype=2
-
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.bokeh.switch.lux=290 \
@@ -46,8 +41,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Dual SIM
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.multisim.config=dsds
-
-# Radio
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.iwlan.enable=true \
-    persist.vendor.radio.data_con_rprt=1
