@@ -36,9 +36,6 @@ KERNEL_DEFCONFIG := wayne_defconfig
 # Manifest
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
-# Platform
-BOARD_VENDOR_PLATFORM := xiaomi-sdm660
-
 # Properties
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 
