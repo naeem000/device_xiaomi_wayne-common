@@ -62,10 +62,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.qcom
 
-# Media
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
-
 # Overlays
 PRODUCT_PACKAGES += \
     AOSPAJasmineSettings \
@@ -99,7 +95,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Watermark
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/media/MIUI_DualCamera_watermark_A2.png:$(TARGET_COPY_OUT_VENDOR)/etc/MIUI_DualCamera_watermark.png
+    $(DEVICE_PATH)/configs/camera/MIUI_DualCamera_watermark_A2.png:$(TARGET_COPY_OUT_VENDOR)/etc/MIUI_DualCamera_watermark.png
 
 # Verity
 PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc/c0c4000.sdhci/by-name/system
