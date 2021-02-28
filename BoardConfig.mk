@@ -30,7 +30,6 @@ DEVICE_PATH := device/xiaomi/jasmine_sprout
 TARGET_SCREEN_DENSITY := 440
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
 KERNEL_DEFCONFIG := wayne_defconfig
 
 # Manifest
