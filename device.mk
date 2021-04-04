@@ -50,6 +50,9 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
+# Dalvik
+$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
+
 # Device properties
 $(call inherit-product, $(DEVICE_PATH)/device_prop.mk)
 
