@@ -30,7 +30,12 @@ DEVICE_PATH := device/xiaomi/jasmine_sprout
 TARGET_SCREEN_DENSITY := 440
 
 # Kernel
-KERNEL_DEFCONFIG := wayne_defconfig
+KERNEL_DEFCONFIG := wayne-debug_defconfig
+ifeq ($(TARGET_KERNEL_VERSION),4.19)
+TARGET_KERNEL_SOURCE := kernel/msm-4.19
+else
+TARGET_KERNEL_SOURCE := kernel/msm-4.4
+endif
 
 # Manifest
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml

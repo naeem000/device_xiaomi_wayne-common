@@ -34,6 +34,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Device Path
 DEVICE_PATH := device/xiaomi/jasmine_sprout
 
+# Kernel
+TARGET_KERNEL_VERSION := 4.4
+
 # A/B
 ENABLE_AB := true
 
