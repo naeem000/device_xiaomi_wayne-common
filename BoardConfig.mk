@@ -26,6 +26,12 @@ include device/xiaomi/sdm660-common/BoardConfigCommon.mk
 # Device Path
 DEVICE_PATH := device/xiaomi/jasmine_sprout
 
+# Audio
+ifeq ($(TARGET_KERNEL_VERSION),4.19)
+BOARD_VENDOR_KERNEL_MODULES += \
+    $(KERNEL_MODULES_OUT)/audio_tas2557.ko
+endif
+
 # Display
 TARGET_SCREEN_DENSITY := 440
 

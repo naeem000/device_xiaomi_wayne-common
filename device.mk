@@ -68,6 +68,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.qcom
 
+# Init
+ifeq ($(TARGET_KERNEL_VERSION),4.19)
+PRODUCT_PACKAGES += \
+    init.jasmine_sprout.rc
+endif
+
 # Overlays
 PRODUCT_PACKAGES += \
     AOSPAJasmineSettings \

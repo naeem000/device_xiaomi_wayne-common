@@ -17,3 +17,10 @@ prebuilt_etc {
     src: "etc/fstab.qcom",
     vendor: true,
 }
+
+prebuilt_etc {
+    name: "init.jasmine_sprout.rc",
+    src: "etc/init.jasmine_sprout.rc",
+    sub_dir: "init",
+    vendor: true,
+}
