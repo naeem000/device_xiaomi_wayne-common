@@ -778,9 +778,11 @@ vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
-vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
 vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
 vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
+
+# Keymaster - from LA.UM.9.12.r1-10800-SMxx50.0-AOSPA
+vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
 
 # Sensors - from LA.UM.8.2.r1-07500-sdm660.0
 vendor/bin/sensors.qti|b0e298dfa67ca3e5910de2b281f9db285c2b1da3
