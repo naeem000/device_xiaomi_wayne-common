@@ -32,6 +32,9 @@ BOARD_VENDOR_KERNEL_MODULES += \
     $(KERNEL_MODULES_OUT)/audio_tas2557.ko
 endif
 
+# Camera
+BOARD_QTI_CAMERA_32BIT_ONLY := true
+
 # Display
 TARGET_SCREEN_DENSITY := 440
 
