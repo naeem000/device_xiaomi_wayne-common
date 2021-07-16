@@ -504,7 +504,7 @@ vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
 vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
 
 # Keymaster - from LA.UM.9.12.r1-10800-SMxx50.0-AOSPA
-vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
+vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc|573b7392c8997008204081165cfe81a11080745d
 
 # Media - from LA.UM.9.11.r1-03900-NICOBAR.0-AOSPA
 vendor/lib/libjpegdhw.so|541216e8cfbeb85dd05fd562e4b1e742d65281fa
