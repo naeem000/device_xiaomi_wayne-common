@@ -13,14 +13,8 @@
 // limitations under the License.
 
 prebuilt_etc {
-    name: "fstab.qcom",
-    src: "etc/fstab.qcom",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "init.jasmine_sprout.rc",
-    src: "etc/init.jasmine_sprout.rc",
+    name: "init.wayne_common.rc",
+    src: "etc/init.wayne_common.rc",
     sub_dir: "init",
     vendor: true,
 }

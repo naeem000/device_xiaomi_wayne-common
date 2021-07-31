@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The Xiaomi-SDM660 Project
+# Copyright (C) 2021 Paranoid Android
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,7 +24,7 @@
 include device/xiaomi/sdm660-common/BoardConfigCommon.mk
 
 # Device Path
-DEVICE_PATH := device/xiaomi/jasmine_sprout
+WAYNE_COMMON_PATH := device/xiaomi/wayne-common
 
 # Audio
 ifeq ($(TARGET_KERNEL_VERSION),4.19)
@@ -47,16 +47,13 @@ TARGET_KERNEL_SOURCE := kernel/msm-4.4
 endif
 
 # Manifest
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
-
-# Recovery
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
-TARGET_RECOVERY_UI_MARGIN_HEIGHT := 33
+DEVICE_MANIFEST_FILE += $(WAYNE_COMMON_PATH)/manifest.xml
 
 # Selinux
-ifneq ($(IS_BRINGUP),true)
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-endif
+BOARD_VENDOR_SEPOLICY_DIRS += $(WAYNE_COMMON_PATH)/sepolicy/vendor
 
 # Vendor Security patch level
 VENDOR_SECURITY_PATCH := 2019-12-05
+
+# Inherit the proprietary files
+include vendor/xiaomi/wayne-common/BoardConfigVendor.mk

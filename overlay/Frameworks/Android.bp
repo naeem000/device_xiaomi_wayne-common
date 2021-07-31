@@ -13,6 +13,6 @@
 // limitations under the License.
 
 runtime_resource_overlay {
-    name: "JasmineFrameworks",
+    name: "WayneCommonFrameworks",
     product_specific: true
 }
