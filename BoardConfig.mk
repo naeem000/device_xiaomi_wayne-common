@@ -39,7 +39,7 @@ BOARD_QTI_CAMERA_32BIT_ONLY := true
 TARGET_SCREEN_DENSITY := 440
 
 # Kernel
-KERNEL_DEFCONFIG := wayne-debug_defconfig
+KERNEL_DEFCONFIG := wayne_defconfig
 ifeq ($(TARGET_KERNEL_VERSION),4.19)
 TARGET_KERNEL_SOURCE := kernel/msm-4.19
 else
