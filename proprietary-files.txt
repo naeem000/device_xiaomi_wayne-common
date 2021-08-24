@@ -4,16 +4,15 @@ vendor/firmware/tas2557_uCDSP.bin
 vendor/firmware/tfa98xx.cnt
 vendor/firmware/voice_amodel.bin
 
-# Audio ACDB
-vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
-vendor/etc/acdbdata/adsp_avs_config.acdb
+# Audio ACDB - from LA.UM.9.11.r1-03900-NICOBAR.0-AOSPA
+vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb|0cbc781cfaac2d52b957282d9d25e926bb70e1be
+vendor/etc/acdbdata/MTP/MTP_General_cal.acdb|94eac09e196f2a12bb781cbbb0f7469e130203fb
+vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb|a72ce7a7b30dc43826cad16cc380db4d88d3fd70
+vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb|378cb51fb98fc08caa6c31d7e20df46675a326e8
+vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb|063f431d1285701523d9816869cf4adc55425688
+vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb|bdb8938c5de6245c7af254463eed5ae047f0e007
+vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb|e6c5ae4ec4d7f2f57f6435ffad907008195e27b7
+vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp|0728619b23447bfc83d5462efcdc1ba3a4467288
 
 # Camera - from LA.UM.9.11.r1-03900-NICOBAR.0-AOSPA
 vendor/lib/lib_algo_svhdr.so|effdf0540edf47574eeaae69f131ac632dec25cb
@@ -33,7 +32,7 @@ vendor/lib/libmmcamera2_mct_shimlayer.so|cf40d4e5c446c3ddd9852b368671e7f1f82dbbf
 vendor/lib/libmmcamera2_pp_buf_mgr.so|2774e02634c6d882bb141d826f16da75ce8e4b4b
 vendor/lib/libmmcamera2_pproc_modules.so|007ee0a3a23eafa2b8685db6e3e453d8d9a6f18d
 vendor/lib/libmmcamera2_q3a_core.so|4902773e089c48f508444746663443c2abfe06d1
-vendor/lib/libmmcamera2_sensor_modules.so|d0ea93cd94545d60de6d2088a4bb622f03fefd7a
+vendor/lib/libmmcamera2_sensor_modules.so|4db166b9e16222a05f7e579b1ebf78abae5c5222
 vendor/lib/libmmcamera2_stats_algorithm.so|f3ea9c1f6daa4a2f80591edb46989fbadf13e680
 vendor/lib/libmmcamera2_stats_lib.so|f8212cb3e3fe14d274d7a8dbfa09d553312f0657
 vendor/lib/libmmcamera2_stats_modules.so|0e6a7cc587b8129dc5fba9711df13c702b853c85
@@ -503,7 +502,7 @@ vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
 vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
 vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
 
-# Keymaster - from LA.UM.9.12.r1-10800-SMxx50.0-AOSPA
+# Keymaster - from LA.UM.9.11.r1-03900-NICOBAR.0-AOSPA
 vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc|573b7392c8997008204081165cfe81a11080745d
 
 # Media - from LA.UM.9.11.r1-03900-NICOBAR.0-AOSPA
