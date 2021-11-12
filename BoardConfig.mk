@@ -57,7 +57,9 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 33
 
 # Selinux
+ifneq ($(IS_BRINGUP),true)
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+endif
 
 # Vendor Security patch level
 VENDOR_SECURITY_PATCH := 2019-12-05
