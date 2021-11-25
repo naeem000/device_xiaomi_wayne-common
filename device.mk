@@ -37,7 +37,7 @@ IS_BRINGUP := true
 DEVICE_PATH := device/xiaomi/jasmine_sprout
 
 # Kernel
-TARGET_KERNEL_VERSION := 4.4
+TARGET_KERNEL_VERSION := 4.19
 
 # A/B
 ENABLE_AB := true
