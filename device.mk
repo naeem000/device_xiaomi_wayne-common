@@ -39,9 +39,6 @@ TARGET_KERNEL_VERSION := 4.19
 # A/B
 ENABLE_AB := true
 
-# FBE
-ENABLE_FBE := true
-
 # Audio
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/audio/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \
