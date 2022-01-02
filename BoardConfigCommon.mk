@@ -26,12 +26,6 @@ include device/xiaomi/sdm660-common/BoardConfigCommon.mk
 # Device Path
 WAYNE_COMMON_PATH := device/xiaomi/wayne-common
 
-# Audio
-ifeq ($(TARGET_KERNEL_VERSION),4.19)
-BOARD_VENDOR_KERNEL_MODULES += \
-    $(KERNEL_MODULES_OUT)/audio_tas2557.ko
-endif
-
 # Camera
 BOARD_QTI_CAMERA_32BIT_ONLY := true
 

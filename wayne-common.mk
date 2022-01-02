@@ -62,12 +62,6 @@ PRODUCT_COPY_FILES += \
     $(WAYNE_COMMON_PATH)/configs/display/qdcm_calib_data_jdi_nt36672_fhd_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_jdi_nt36672_fhd_video_mode_dsi_panel.xml \
     $(WAYNE_COMMON_PATH)/configs/display/qdcm_calib_data_tianma_nt36672_fhd_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_tianma_nt36672_fhd_video_mode_dsi_panel.xml
 
-# Init
-ifeq ($(TARGET_KERNEL_VERSION), 4.19)
-PRODUCT_PACKAGES += \
-    init.wayne_common.rc
-endif
-
 # Overlays
 PRODUCT_PACKAGES += \
     AOSPAWayneCommonSettings \
