@@ -49,6 +49,9 @@ PRODUCT_PACKAGES += \
     camera.sdm660 \
     libmm-qcamera
 
+# Camera
+$(call inherit-product-if-exists, vendor/google/Camera/camera.mk)
+
 # Consumerir
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
