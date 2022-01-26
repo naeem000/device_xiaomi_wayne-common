@@ -67,7 +67,7 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    AOSPAWayneCommonSettings \
+    WayneCommonSettings \
     WayneCommonFrameworks \
     WayneCommonSystemUI
 
@@ -77,10 +77,6 @@ PRODUCT_COPY_FILES += \
 
 # Properties
 $(call inherit-product, $(WAYNE_COMMON_PATH)/properties.mk)
-
-# QTI common
-TARGET_COMMON_QTI_COMPONENTS := \
-    vibrator
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
@@ -105,6 +101,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc/c0c4000.sdhci/by-name/system
 PRODUCT_VENDOR_VERITY_PARTITION := /dev/block/platform/soc/c0c4000.sdhci/by-name/vendor
 $(call inherit-product, build/target/product/verity.mk)
+
+# Vibrator
+ifeq ($(TARGET_KERNEL_VERSION),4.19)
+CONFIG_QTI_HAPTICS := true
+endif
 
 # Vendor files
 $(call inherit-product, vendor/xiaomi/wayne-common/wayne-common-vendor.mk)
